@@ -1,0 +1,10 @@
+---
+- name: display Message of the day
+  hosts: all
+  vars:
+    - administrator: kawtarsabri7@gmail.com
+  tasks:
+    - name: configure MOD
+      template:
+        src: test_jinja2.j2
+        dest: /home/kaoutar/templates/test_jinja.j2
